@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DeviceId>30F105C9-681E-420b-A277-7C086EAD8A4E</DeviceId>
+    <UseEmulator>true</UseEmulator>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Source>E:\MyWork\Курсавой проект\MinskTS\MinskTS\Assets\bus.png</Source>
+    <SmallTileSource>E:\MyWork\Курсавой проект\MinskTS\MinskTS\Assets\bus.png</SmallTileSource>
+    <MediumTileSource>E:\MyWork\Курсавой проект\MinskTS\MinskTS\Assets\bus.png</MediumTileSource>
+    <WideTileSource>E:\MyWork\Курсавой проект\MinskTS\MinskTS\Assets\bus.png</WideTileSource>
+    <LargeTileSource>E:\MyWork\Курсавой проект\MinskTS\MinskTS\Assets\bus.png</LargeTileSource>
+    <AppIconSource>E:\MyWork\Курсавой проект\MinskTS\MinskTS\Assets\bus.png</AppIconSource>
+    <SplashScreenSource>E:\MyWork\Курсавой проект\MinskTS\MinskTS\Assets\bus.png</SplashScreenSource>
+  </PropertyGroup>
+</Project>
