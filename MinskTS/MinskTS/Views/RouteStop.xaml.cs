@@ -1,5 +1,6 @@
 ﻿using MinskTS.Models;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -24,7 +25,8 @@ namespace MinskTS.Views
     {
     
         List<int> lst = new List<int>();
-        List<string> lst2 = new List<string>();
+        Dictionary<int,string> lst2 = new Dictionary<int, string>();
+
         public RouteStop()
         {
             this.InitializeComponent();
@@ -35,7 +37,7 @@ namespace MinskTS.Views
         {
             if (e.Parameter != null)
             {
-              
+                Time.Rt = (int)e.Parameter;
                 using (ScheduleContext db = new ScheduleContext())
                 {
 
@@ -54,7 +56,7 @@ namespace MinskTS.Views
                         {
                             if (item2.Id == i)
                             {
-                                lst2.Add(item2.Name.ToString());
+                                lst2.Add(item2.Id,item2.Name.ToString());
                             }
                         }
 
@@ -64,6 +66,19 @@ namespace MinskTS.Views
                     scheduleRS.ItemsSource = lst2;
                 }
             }
+        }
+
+
+        private void ScheduleList_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            using (ScheduleContext db = new ScheduleContext())
+            {
+                KeyValuePair<int, string> select = (KeyValuePair<int, string>)e.ClickedItem;
+                Time.St =  select.Key;
+                Frame.Navigate(typeof(Time));
+            }
+               
+                   
         }
     }
 }

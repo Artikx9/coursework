@@ -84,7 +84,10 @@
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedItem" />
       <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="Margin" />
+      <RootProperty Name="IsMultiSelectCheckBoxEnabled" />
+      <RootEvent Name="ItemClick" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
@@ -232,6 +235,8 @@
       <RootEvent Name="TextChanged" />
     </RootType>
     <RootType FullName="MinskTS.Views.Route" />
+    <RootType FullName="MinskTS.Views.RouteStop" />
     <RootType FullName="MinskTS.Views.Stop" />
+    <RootType FullName="MinskTS.Views.StopRoute" />
   </Roots.RootTypes>
 </Roots>

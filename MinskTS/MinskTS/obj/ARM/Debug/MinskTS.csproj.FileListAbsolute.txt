@@ -291,3 +291,13 @@ E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\FxResource
 E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Microsoft.AspNetCore.Http.Abstractions\en-us\Microsoft.AspNetCore.Http.Abstractions.Resources.resw
 E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Microsoft.EntityFrameworkCore.Design\en-US\Microsoft.EntityFrameworkCore.Design.Properties.DesignStrings.resw
 E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Microsoft.EntityFrameworkCore.Relational.Design\en-US\Microsoft.EntityFrameworkCore.Relational.Design.Properties.RelationalDesignStrings.resw
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\ARM\Debug\Views\RouteStop.xbf
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\ARM\Debug\Views\StopRoute.xbf
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\RouteStop.g.i.cs
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\RouteStop.g.cs
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\StopRoute.g.i.cs
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\StopRoute.g.cs
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\RouteStop.xaml
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\StopRoute.xaml
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\RouteStop.xbf
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\StopRoute.xbf

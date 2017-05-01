@@ -71,14 +71,14 @@ namespace MinskTS
             }
 
 
-                if (await ApplicationData.Current.LocalFolder.TryGetItemAsync("schedule.db") == null)
+            if (await ApplicationData.Current.LocalFolder.TryGetItemAsync("schedule.db") == null)
             {
 
                 StorageFile databaseFile = await Package.Current.InstalledLocation.GetFileAsync("schedule.db");
                 await databaseFile.CopyAsync(ApplicationData.Current.LocalFolder);
             }
-         
-          
+
+
 
             Frame rootFrame = Window.Current.Content as Frame;
 

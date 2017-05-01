@@ -28,13 +28,13 @@
     <AppXManifest Include="E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-26T22:12:58.225</Modified>
+      <Modified>2017-05-01T10:11:56.356</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\x86\Debug\MinskTS.exe">
       <PackagePath>entrypoint\MinskTS.exe</PackagePath>
-      <Modified>2017-04-26T22:12:57.512</Modified>
+      <Modified>2017-05-01T10:10:43.348</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\artik\.nuget\packages\CommonServiceLocator\1.3.0\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
@@ -837,17 +837,13 @@
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2017-04-10T18:12:57.355</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="E:\MyWork\Курсавой проект\MinskTS\MinskTS\schedule.db">
-      <PackagePath>schedule.db</PackagePath>
-      <Modified>2017-04-24T20:54:08.781</Modified>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\MyWork\Курсавой проект\MinskTS\MinskTS\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2017-04-10T14:25:25.599</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\x86\Debug\MinskTS.xr.xml">
       <PackagePath>MinskTS.xr.xml</PackagePath>
-      <Modified>2017-04-26T21:22:29.314</Modified>
+      <Modified>2017-05-01T10:10:43.136</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -860,11 +856,11 @@
     <AppxPackagedFile Include="E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-26T22:12:57.942</Modified>
+      <Modified>2017-05-01T10:11:54.790</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\x86\Debug\Core\MinskTS.exe">
       <PackagePath>MinskTS.exe</PackagePath>
-      <Modified>2017-04-26T22:12:58.222</Modified>
+      <Modified>2017-05-01T10:11:56.353</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

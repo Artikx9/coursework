@@ -9,7 +9,7 @@
    
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <AutoSuggestBox x:ConnectionId='1' x:Name="suggestBox"  PlaceholderText="Введите фразу для поиска" QueryIcon="Find"                                      VerticalAlignment="Top" HorizontalContentAlignment="Stretch"/>
-        <ListView x:ConnectionId='2' x:Name="scheduleList" Margin="0,42,0,0">
+        <ListView x:ConnectionId='2' IsItemClickEnabled="True"                                    x:Name="scheduleList" Margin="0,42,0,0"  >
             <ListView.ItemTemplate>
                 <DataTemplate                        >
                     <StackPanel>
@@ -18,8 +18,6 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-       
-        
     </Grid>
 </Page>
 

@@ -4,4 +4,6 @@ Themes\Generic.xbf
 Views\Home.xbf
 Views\Metro.xbf
 Views\Route.xbf
+Views\RouteStop.xbf
 Views\Stop.xbf
+Views\StopRoute.xbf

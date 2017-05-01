@@ -132,7 +132,7 @@ namespace MinskTS.MinskTS_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[22];
+            _typeNameTable = new string[24];
             _typeNameTable[0] = "MinskTS.ViewModels.ViewModelLocator";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "MinskTS.ViewModels.MainViewModel";
@@ -154,9 +154,11 @@ namespace MinskTS.MinskTS_XamlTypeInfo
             _typeNameTable[18] = "MinskTS.Views.Metro";
             _typeNameTable[19] = "String";
             _typeNameTable[20] = "MinskTS.Views.Route";
-            _typeNameTable[21] = "MinskTS.Views.Stop";
+            _typeNameTable[21] = "MinskTS.Views.RouteStop";
+            _typeNameTable[22] = "MinskTS.Views.Stop";
+            _typeNameTable[23] = "MinskTS.Views.StopRoute";
 
-            _typeTable = new global::System.Type[22];
+            _typeTable = new global::System.Type[24];
             _typeTable[0] = typeof(global::MinskTS.ViewModels.ViewModelLocator);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::MinskTS.ViewModels.MainViewModel);
@@ -178,7 +180,9 @@ namespace MinskTS.MinskTS_XamlTypeInfo
             _typeTable[18] = typeof(global::MinskTS.Views.Metro);
             _typeTable[19] = typeof(global::System.String);
             _typeTable[20] = typeof(global::MinskTS.Views.Route);
-            _typeTable[21] = typeof(global::MinskTS.Views.Stop);
+            _typeTable[21] = typeof(global::MinskTS.Views.RouteStop);
+            _typeTable[22] = typeof(global::MinskTS.Views.Stop);
+            _typeTable[23] = typeof(global::MinskTS.Views.StopRoute);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -222,7 +226,9 @@ namespace MinskTS.MinskTS_XamlTypeInfo
         private object Activate_17_Home() { return new global::MinskTS.Views.Home(); }
         private object Activate_18_Metro() { return new global::MinskTS.Views.Metro(); }
         private object Activate_20_Route() { return new global::MinskTS.Views.Route(); }
-        private object Activate_21_Stop() { return new global::MinskTS.Views.Stop(); }
+        private object Activate_21_RouteStop() { return new global::MinskTS.Views.RouteStop(); }
+        private object Activate_22_Stop() { return new global::MinskTS.Views.Stop(); }
+        private object Activate_23_StopRoute() { return new global::MinskTS.Views.StopRoute(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -365,9 +371,23 @@ namespace MinskTS.MinskTS_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 21:   //  MinskTS.Views.Stop
+            case 21:   //  MinskTS.Views.RouteStop
                 userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_Stop;
+                userType.Activator = Activate_21_RouteStop;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 22:   //  MinskTS.Views.Stop
+                userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_22_Stop;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 23:   //  MinskTS.Views.StopRoute
+                userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_23_StopRoute;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

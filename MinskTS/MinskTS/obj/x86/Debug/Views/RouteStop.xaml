@@ -8,12 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        
-        <ListView x:ConnectionId='1'   x:Name="scheduleRS"  >
+
+        <ListView x:ConnectionId='1' IsItemClickEnabled="True"                                      x:Name="scheduleRS"  >
             <ListView.ItemTemplate>
                 <DataTemplate                        >
                     <StackPanel>
-                        <TextBlock Text="{Binding }" FontSize="26" />
+                        <TextBlock Text="{Binding Value }" FontSize="26" />
                         
                     </StackPanel>
                 </DataTemplate>

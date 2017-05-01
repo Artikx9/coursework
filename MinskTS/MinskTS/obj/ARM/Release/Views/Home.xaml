@@ -1,0 +1,25 @@
+﻿<Page
+    x:Class="MinskTS.Views.Home"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MinskTS.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <Viewbox MaxHeight="100"
+                     MaxWidth="100">
+                <Image Source="/assets/bus.png" Height="784" Width="779"  />
+            </Viewbox>
+            <TextBlock TextAlignment="Center"  Text="MINSK"  FontSize="30"  />
+            <TextBlock TextAlignment="Center"  Text="TRANSPORT" FontSize="30"  />
+            <TextBlock TextAlignment="Center"  Text="SCHEDULE"  FontSize="30"  />
+        </StackPanel>
+       
+    </Grid>
+</Page>
+

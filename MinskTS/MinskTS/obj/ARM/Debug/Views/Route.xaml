@@ -9,7 +9,7 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <AutoSuggestBox x:ConnectionId='1' x:Name="suggestRoute"  PlaceholderText="Введите фразу для поиска" QueryIcon="Find"                                       VerticalAlignment="Top" HorizontalContentAlignment="Stretch"/>
 
-        <ListView x:ConnectionId='2' x:Name="scheduleRoute" Margin="0,32,0,0">
+        <ListView x:ConnectionId='2'  IsItemClickEnabled="True"                                     x:Name="scheduleRoute" Margin="0,32,0,0" IsMultiSelectCheckBoxEnabled="False">
 
             <ListView.ItemTemplate>
                 <DataTemplate                        >

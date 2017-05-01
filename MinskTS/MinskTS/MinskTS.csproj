@@ -130,7 +130,7 @@
     <Content Include="Assets\Wide310x150Logo.scale-125.png" />
     <Content Include="Assets\Wide310x150Logo.scale-150.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
-    <Content Include="schedule.db" />
+    <None Include="schedule.db" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -166,6 +166,9 @@
     </Compile>
     <Compile Include="Views\StopRoute.xaml.cs">
       <DependentUpon>StopRoute.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Time.xaml.cs">
+      <DependentUpon>Time.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -219,6 +222,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\StopRoute.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Time.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

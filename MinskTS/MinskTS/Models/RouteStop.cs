@@ -22,6 +22,7 @@ namespace MinskTS.Models
         public DbSet<Stops> Stop { get; set; }
         public DbSet<Rou> Route { get; set; }
         public DbSet<RS> RouteStop { get; set; }
+        public DbSet<TT> TimeTable { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

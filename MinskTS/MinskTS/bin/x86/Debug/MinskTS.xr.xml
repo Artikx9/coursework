@@ -9,7 +9,9 @@
     <RootPropertyPathName Name="IsPaneOpen" />
     <RootPropertyPathName Name="RouteName" />
     <RootPropertyPathName Name="Number" />
+    <RootPropertyPathName Name="Value" />
     <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="Key" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
     <RootType FullName="Windows.UI.Xaml.Application">
@@ -238,5 +240,6 @@
     <RootType FullName="MinskTS.Views.RouteStop" />
     <RootType FullName="MinskTS.Views.Stop" />
     <RootType FullName="MinskTS.Views.StopRoute" />
+    <RootType FullName="MinskTS.Views.Time" />
   </Roots.RootTypes>
 </Roots>

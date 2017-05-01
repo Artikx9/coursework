@@ -9,11 +9,11 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <TextBlock x:Name="texblock"></TextBlock>
-        <ListView   x:Name="scheduleRS"  >
+        <ListView IsItemClickEnabled="True"  ItemClick="ScheduleList_ItemClick"    x:Name="scheduleRS"  >
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:Home">
                     <StackPanel>
-                        <TextBlock Text="{Binding }" FontSize="26" />
+                        <TextBlock Text="{Binding Value }" FontSize="26" />
 
                     </StackPanel>
                 </DataTemplate>

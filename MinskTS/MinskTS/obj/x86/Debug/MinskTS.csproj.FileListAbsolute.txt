@@ -302,3 +302,8 @@ E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\x86\Debug\Views\Stop
 E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\x86\Debug\Views\StopRoute.g.cs
 E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\x86\Debug\Views\StopRoute.xaml
 E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\x86\Debug\Views\StopRoute.xbf
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\x86\Debug\Views\Time.xbf
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\x86\Debug\Views\Time.g.i.cs
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\x86\Debug\Views\Time.g.cs
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\x86\Debug\Views\Time.xaml
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\x86\Debug\Views\Time.xbf
