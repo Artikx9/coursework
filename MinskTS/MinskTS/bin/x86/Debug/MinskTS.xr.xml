@@ -8,9 +8,10 @@
     <RootPropertyPathName Name="SymbolIcon" />
     <RootPropertyPathName Name="IsPaneOpen" />
     <RootPropertyPathName Name="RouteName" />
+    <RootPropertyPathName Name="Type" />
     <RootPropertyPathName Name="Number" />
-    <RootPropertyPathName Name="Value" />
     <RootPropertyPathName Name="Name" />
+    <RootPropertyPathName Name="Value" />
     <RootPropertyPathName Name="Key" />
   </Roots.PropertyPathNames>
   <Roots.RootTypes>
@@ -89,6 +90,10 @@
       <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="Margin" />
       <RootProperty Name="IsMultiSelectCheckBoxEnabled" />
+      <RootProperty Name="IsSynchronizedWithCurrentItem" />
+      <RootProperty Name="IsEnabled" />
+      <RootProperty Name="IsSwipeEnabled" />
+      <RootProperty Name="SelectionMode" />
       <RootEvent Name="ItemClick" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
@@ -228,18 +233,23 @@
       <RootMethod Name="GetVerticalScrollBarVisibility" />
       <RootMethod Name="SetVerticalScrollBarVisibility" />
     </RootType>
-    <RootType FullName="MinskTS.Views.Metro" />
+    <RootType FullName="MinskTS.Views.Metros" />
     <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="QueryIcon" />
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="Margin" />
       <RootEvent Name="TextChanged" />
     </RootType>
-    <RootType FullName="MinskTS.Views.Route" />
-    <RootType FullName="MinskTS.Views.RouteStop" />
-    <RootType FullName="MinskTS.Views.Stop" />
-    <RootType FullName="MinskTS.Views.StopRoute" />
-    <RootType FullName="MinskTS.Views.Time" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Width" />
+      <RootEvent Name="SelectionChanged" />
+    </RootType>
+    <RootType FullName="MinskTS.Views.Routes" />
+    <RootType FullName="MinskTS.Views.RouteStops" />
+    <RootType FullName="MinskTS.Views.Stops" />
+    <RootType FullName="MinskTS.Views.StopRoutes" />
+    <RootType FullName="MinskTS.Views.Times" />
   </Roots.RootTypes>
 </Roots>

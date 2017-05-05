@@ -132,7 +132,7 @@ namespace MinskTS.MinskTS_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[24];
+            _typeNameTable = new string[25];
             _typeNameTable[0] = "MinskTS.ViewModels.ViewModelLocator";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "MinskTS.ViewModels.MainViewModel";
@@ -157,8 +157,9 @@ namespace MinskTS.MinskTS_XamlTypeInfo
             _typeNameTable[21] = "MinskTS.Views.RouteStop";
             _typeNameTable[22] = "MinskTS.Views.Stop";
             _typeNameTable[23] = "MinskTS.Views.StopRoute";
+            _typeNameTable[24] = "MinskTS.Views.Time";
 
-            _typeTable = new global::System.Type[24];
+            _typeTable = new global::System.Type[25];
             _typeTable[0] = typeof(global::MinskTS.ViewModels.ViewModelLocator);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::MinskTS.ViewModels.MainViewModel);
@@ -183,6 +184,7 @@ namespace MinskTS.MinskTS_XamlTypeInfo
             _typeTable[21] = typeof(global::MinskTS.Views.RouteStop);
             _typeTable[22] = typeof(global::MinskTS.Views.Stop);
             _typeTable[23] = typeof(global::MinskTS.Views.StopRoute);
+            _typeTable[24] = typeof(global::MinskTS.Views.Time);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -229,6 +231,7 @@ namespace MinskTS.MinskTS_XamlTypeInfo
         private object Activate_21_RouteStop() { return new global::MinskTS.Views.RouteStop(); }
         private object Activate_22_Stop() { return new global::MinskTS.Views.Stop(); }
         private object Activate_23_StopRoute() { return new global::MinskTS.Views.StopRoute(); }
+        private object Activate_24_Time() { return new global::MinskTS.Views.Time(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -388,6 +391,13 @@ namespace MinskTS.MinskTS_XamlTypeInfo
             case 23:   //  MinskTS.Views.StopRoute
                 userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_23_StopRoute;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 24:   //  MinskTS.Views.Time
+                userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_24_Time;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

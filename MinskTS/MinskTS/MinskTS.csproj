@@ -18,6 +18,9 @@
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <WindowsXamlEnableOverview>true</WindowsXamlEnableOverview>
     <PackageCertificateKeyFile>MinskTS_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Always</AppxBundle>
+    <AppxBundlePlatforms>x86|x64|arm</AppxBundlePlatforms>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
     <DebugSymbols>true</DebugSymbols>
@@ -130,7 +133,9 @@
     <Content Include="Assets\Wide310x150Logo.scale-125.png" />
     <Content Include="Assets\Wide310x150Logo.scale-150.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
-    <None Include="schedule.db" />
+    <Content Include="schedule.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -152,23 +157,23 @@
     <Compile Include="Views\Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Metro.xaml.cs">
-      <DependentUpon>Metro.xaml</DependentUpon>
+    <Compile Include="Views\Metros.xaml.cs">
+      <DependentUpon>Metros.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Route.xaml.cs">
-      <DependentUpon>Route.xaml</DependentUpon>
+    <Compile Include="Views\Routes.xaml.cs">
+      <DependentUpon>Routes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\RouteStop.xaml.cs">
-      <DependentUpon>RouteStop.xaml</DependentUpon>
+    <Compile Include="Views\RouteStops.xaml.cs">
+      <DependentUpon>RouteStops.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Stop.xaml.cs">
-      <DependentUpon>Stop.xaml</DependentUpon>
+    <Compile Include="Views\Stops.xaml.cs">
+      <DependentUpon>Stops.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\StopRoute.xaml.cs">
-      <DependentUpon>StopRoute.xaml</DependentUpon>
+    <Compile Include="Views\StopRoutes.xaml.cs">
+      <DependentUpon>StopRoutes.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\Time.xaml.cs">
-      <DependentUpon>Time.xaml</DependentUpon>
+    <Compile Include="Views\Times.xaml.cs">
+      <DependentUpon>Times.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -205,27 +210,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Metro.xaml">
+    <Page Include="Views\Metros.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Route.xaml">
+    <Page Include="Views\Routes.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\RouteStop.xaml">
+    <Page Include="Views\RouteStops.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Stop.xaml">
+    <Page Include="Views\Stops.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\StopRoute.xaml">
+    <Page Include="Views\StopRoutes.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\Time.xaml">
+    <Page Include="Views\Times.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

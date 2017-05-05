@@ -12,7 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-
+using MinskTS.Models;
 
 // Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -23,14 +23,9 @@ namespace MinskTS.Views
     /// </summary>
     public sealed partial class Home : Page
     {
-        
-
         public Home()
         {
-            this.InitializeComponent();
-            
-        }
-
-      
+            this.InitializeComponent();  
+        }  
     }
 }

@@ -8,12 +8,8 @@ using GalaSoft.MvvmLight;
 
 namespace MinskTS.Models
 {
-
-
-
-    public class Metr
-    {
-        
+    public class Metro
+    {  
         public int Id { get; set; }
         public int Time { get; set; }
         public int WorkDays { get; set; }
@@ -24,8 +20,7 @@ namespace MinskTS.Models
 
     public class MetroContext : DbContext
     {
-
-        public DbSet<Metr> Metro { get; set; }
+        public DbSet<Metro> Metro { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

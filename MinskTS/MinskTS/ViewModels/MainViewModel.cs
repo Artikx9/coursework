@@ -33,13 +33,10 @@ namespace MinskTS.ViewModels
         {
             List<MenuItem> menuItems = new List<MenuItem>();
             menuItems.Add(new MenuItem() { Title = "Главная", SymbolIcon = "", NavigateTo = typeof(Home) });
-            menuItems.Add(new MenuItem() { Title = "Остановки", SymbolIcon = "", NavigateTo = typeof(Stop) });
-            menuItems.Add(new MenuItem() { Title = "Маршруты", SymbolIcon = "", NavigateTo = typeof(Route) });
-            menuItems.Add(new MenuItem() { Title = "Метро", SymbolIcon = "", NavigateTo = typeof(Metro)  });
-       
-
-
-
+            menuItems.Add(new MenuItem() { Title = "Остановки", SymbolIcon = "", NavigateTo = typeof(Views.Stops) });
+            menuItems.Add(new MenuItem() { Title = "Маршруты", SymbolIcon = "", NavigateTo = typeof(Routes) });
+            menuItems.Add(new MenuItem() { Title = "Метро", SymbolIcon = "", NavigateTo = typeof(Metros)  });
+     
             return menuItems;
         }
 
