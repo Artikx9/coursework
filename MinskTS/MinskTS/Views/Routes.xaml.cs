@@ -128,4 +128,5 @@ namespace MinskTS.Views
             Frame.Navigate(typeof(RouteStops), selected.Id);
         }
     }
+
 }

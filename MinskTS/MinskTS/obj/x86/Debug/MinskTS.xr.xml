@@ -1,5 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="MainViewModel" />
     <RootPropertyPathName Name="MenuItems" />
@@ -27,12 +30,14 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Source" />
       <RootProperty Name="Path" />
       <RootProperty Name="Mode" />
       <RootProperty Name="ElementName" />
+      <RootProperty Name="Converter" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
@@ -234,6 +239,7 @@
       <RootMethod Name="SetVerticalScrollBarVisibility" />
     </RootType>
     <RootType FullName="MinskTS.Views.Metros" />
+    <RootType FullName="MinskTS.Models.Converter" />
     <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="QueryIcon" />

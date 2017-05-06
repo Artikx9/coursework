@@ -20,7 +20,7 @@
                                 <ColumnDefinition />
                             </Grid.ColumnDefinitions>
                             <TextBlock Grid.Column="0" Text="{Binding Number}" FontSize="26"    />
-                            <TextBlock Grid.Column="1" Text="{Binding Type}" FontSize="26"  />
+                            <Image  Grid.Column="1" Source="{Binding Type}"  />
                             <TextBlock Grid.Column="2" Text="{Binding RouteName}" FontSize="26" />
                         </Grid>
                     </StackPanel>

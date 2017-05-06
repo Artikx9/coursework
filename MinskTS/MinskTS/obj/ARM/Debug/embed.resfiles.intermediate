@@ -2,9 +2,9 @@ App.xbf
 MainPage.xbf
 Themes\Generic.xbf
 Views\Home.xbf
-Views\Metro.xbf
-Views\Route.xbf
-Views\RouteStop.xbf
-Views\Stop.xbf
-Views\StopRoute.xbf
-Views\Time.xbf
+Views\Metros.xbf
+Views\Routes.xbf
+Views\RouteStops.xbf
+Views\StopRoutes.xbf
+Views\Stops.xbf
+Views\Times.xbf
