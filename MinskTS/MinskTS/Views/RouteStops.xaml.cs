@@ -62,6 +62,7 @@ namespace MinskTS.Views
                 Stop select = (Stop)e.ClickedItem;
                 Times.St =  select.Id;
                 Frame.Navigate(typeof(Times));
+               
             }         
         }
     }

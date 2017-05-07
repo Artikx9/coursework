@@ -26,13 +26,39 @@ namespace MinskTS.Views
         private static int st;
         public static int St { get => st; set => st = value; }
         public static int Rt { get => rt; set => rt = value; }
+        private string StopName { get; set; }
+        private string RouteNumber { get; set; }
+        private Types Icon { get; set; }
         Dictionary<string,string> str = new Dictionary<string,string>();
         List<string> lst = new List<string>();
         List<string> lst2 = new List<string>();
         public Times()
         {
             this.InitializeComponent();
+            this.Loaded += Time_Loaded;
+            
         }
+
+        private void Time_Loaded(object sender, RoutedEventArgs e)
+        {
+            
+            using (ScheduleContext db = new ScheduleContext())
+            {
+                var route = db.Route.Where(x => x.Id == rt);
+                    foreach (var item in route)
+                    {
+                      RouteNumber = item.Number;
+                      Icon = item.Type;
+                    }
+                var stop = db.Stop.Where(x => x.Id == st).Select(x => x.Name);
+                    foreach (var item2 in stop)
+                    {
+                     StopName = item2;
+                    }
+            }
+            MainPage.Title = "→Расписание " + RouteNumber + " " +Icon;
+        }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
            
@@ -53,8 +79,7 @@ namespace MinskTS.Views
                 }
 
                 scheduleTime.ItemsSource = str;
-                //SolidColorBrush qwe = new SolidColorBrush();
-                //scheduleTime.Foreground = 
+               // scheduleTime.SelectedIndex = 2;
             }
         }
     }

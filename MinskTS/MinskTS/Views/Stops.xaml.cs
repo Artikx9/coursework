@@ -63,6 +63,7 @@ namespace MinskTS.Views
         {
             Stop selected = (Stop)e2.ClickedItem;
             Frame.Navigate(typeof(StopRoutes), selected.Id);
+            MainPage.Title = "→выберите маршурт";
         }
     }
 }

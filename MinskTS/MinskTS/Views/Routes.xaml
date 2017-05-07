@@ -19,12 +19,12 @@
                 <DataTemplate x:DataType="local:Home">
                     <Grid>
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="50"   />
-                            <ColumnDefinition Width="150" />
+                            <ColumnDefinition Width="30"   />
+                            <ColumnDefinition Width="100" />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
                         <TextBlock Grid.Column="0" Text="{Binding Number}" FontSize="26"    />
-                        <Image Grid.Column="1" Source="{Binding Type, Converter={StaticResource IconConverter}}" Width="25" Height="25"  />
+                        <Image Grid.Column="1" Source="{Binding Type, Converter={StaticResource IconConverter}}" Width="30" Height="30" VerticalAlignment="Top"  />
                         <TextBlock Grid.Column="2" Text="{Binding RouteName}" FontSize="26" />
                     </Grid>
                 </DataTemplate>

@@ -5,6 +5,7 @@ Views\Home.xbf
 Views\Metros.xbf
 Views\Routes.xbf
 Views\RouteStops.xbf
+Views\Setting.xbf
 Views\StopRoutes.xbf
 Views\Stops.xbf
 Views\Times.xbf

@@ -29,8 +29,8 @@
     <RootType FullName="MinskTS.ViewModels.ViewModelLocator" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="DataContext" />
-      <RootProperty Name="Content" />
       <RootProperty Name="Resources" />
+      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
       <RootProperty Name="Source" />
@@ -40,6 +40,7 @@
       <RootProperty Name="Converter" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="MinskTS.Models.Converter" />
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="Background" />
       <RootProperty Name="RowDefinitions" />
@@ -95,10 +96,6 @@
       <RootProperty Name="IsItemClickEnabled" />
       <RootProperty Name="Margin" />
       <RootProperty Name="IsMultiSelectCheckBoxEnabled" />
-      <RootProperty Name="IsSynchronizedWithCurrentItem" />
-      <RootProperty Name="IsEnabled" />
-      <RootProperty Name="IsSwipeEnabled" />
-      <RootProperty Name="SelectionMode" />
       <RootEvent Name="ItemClick" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
@@ -129,6 +126,7 @@
       <RootMethod Name="SetToolTip" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Frame">
+      <RootProperty Name="HorizontalContentAlignment" />
       <RootProperty Name="ContentTransitions" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
@@ -230,6 +228,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="MinWidth" />
       <RootProperty Name="MinHeight" />
+      <RootProperty Name="VerticalAlignment" />
     </RootType>
     <RootType FullName="MinskTS.Views.Home" />
     <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
@@ -239,7 +238,6 @@
       <RootMethod Name="SetVerticalScrollBarVisibility" />
     </RootType>
     <RootType FullName="MinskTS.Views.Metros" />
-    <RootType FullName="MinskTS.Models.Converter" />
     <RootType FullName="Windows.UI.Xaml.Controls.AutoSuggestBox">
       <RootProperty Name="PlaceholderText" />
       <RootProperty Name="QueryIcon" />
@@ -254,6 +252,14 @@
     </RootType>
     <RootType FullName="MinskTS.Views.Routes" />
     <RootType FullName="MinskTS.Views.RouteStops" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
+      <RootProperty Name="Header" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootEvent Name="Toggled" />
+    </RootType>
+    <RootType FullName="MinskTS.Views.Setting" />
     <RootType FullName="MinskTS.Views.Stops" />
     <RootType FullName="MinskTS.Views.StopRoutes" />
     <RootType FullName="MinskTS.Views.Times" />

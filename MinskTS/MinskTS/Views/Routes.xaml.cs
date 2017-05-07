@@ -19,14 +19,15 @@ namespace MinskTS.Views
 {
     public sealed partial class Routes : Page
     {
-        public Routes()
+        public   Routes()
         {
             this.InitializeComponent();
             this.Loaded += Rout_Loaded;  
         }
 
-        private void Rout_Loaded(object sender, RoutedEventArgs e)
+        private  void Rout_Loaded(object sender, RoutedEventArgs e)
         {
+            
             using (ScheduleContext db = new ScheduleContext())
             {
                 scheduleRoute.ItemsSource = db.Route.ToList();
@@ -35,11 +36,11 @@ namespace MinskTS.Views
             }
         }
 
-        private void  SortFunction(string senderText)
+        private  void  SortFunction(string senderText)
         {
             using (ScheduleContext db = new ScheduleContext())
             {
-                if(comboBox.SelectedValue == null)
+               if(comboBox.SelectedValue == null)
                 {
                     if (senderText.Length > 0)
                     {
@@ -116,7 +117,7 @@ namespace MinskTS.Views
             }
         }
      
-        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             ComboBox senderComboBox = (ComboBox)sender;
             SortFunction(senderComboBox.SelectedItem.ToString());
@@ -126,6 +127,7 @@ namespace MinskTS.Views
         {
             Route selected = (Route)e.ClickedItem;
             Frame.Navigate(typeof(RouteStops), selected.Id);
+            MainPage.Title = "→выберите остановку";
         }
     }
 

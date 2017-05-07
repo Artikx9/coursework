@@ -17,6 +17,7 @@ namespace MinskTS.ViewModels
         {
             MenuItems = new ObservableCollection<MenuItem>(GetMenuItems());
             SelectedMenuItem = MenuItems.FirstOrDefault();
+           
         }
 
         public ObservableCollection<MenuItem> MenuItems { get; set; }
@@ -26,17 +27,20 @@ namespace MinskTS.ViewModels
         public MenuItem SelectedMenuItem
         {
             get { return selectedMenuItem; }
-            set { selectedMenuItem = value; RaisePropertyChanged(); }
+            set { selectedMenuItem = value; RaisePropertyChanged(); MainPage.Title = "";}
         }
 
         private List<MenuItem> GetMenuItems()
         {
-            List<MenuItem> menuItems = new List<MenuItem>();
-            menuItems.Add(new MenuItem() { Title = "Главная", SymbolIcon = "", NavigateTo = typeof(Home) });
-            menuItems.Add(new MenuItem() { Title = "Остановки", SymbolIcon = "", NavigateTo = typeof(Views.Stops) });
-            menuItems.Add(new MenuItem() { Title = "Маршруты", SymbolIcon = "", NavigateTo = typeof(Routes) });
-            menuItems.Add(new MenuItem() { Title = "Метро", SymbolIcon = "", NavigateTo = typeof(Metros)  });
-     
+            
+            List<MenuItem> menuItems = new List<MenuItem>
+            {
+                new MenuItem() { Title = "Главная", SymbolIcon = "", NavigateTo = typeof(Home) },
+                new MenuItem() { Title = "Остановки", SymbolIcon = "", NavigateTo = typeof(Stops) },
+                new MenuItem() { Title = "Маршруты", SymbolIcon = "", NavigateTo = typeof(Routes) },
+                new MenuItem() { Title = "Метро", SymbolIcon = "", NavigateTo = typeof(Metros) },
+                new MenuItem() { Title = "Настройки", SymbolIcon = "", NavigateTo = typeof(Setting) }
+            };
             return menuItems;
         }
 

@@ -20,17 +20,14 @@ namespace MinskTS.Views
 {
     public sealed partial class Metros : Page
     {
-        public int hour;
-        public string DayofWeek;
-        public string Metr { get; set; }
-        public string Context = "ИНТЕРВАЛ ДВИЖЕНИЯ МЕТРО: ";
-        public string Context2 = " мин. ";
+        private int hour;
+        private string DayofWeek;
+        private string Metr { get; set; }
+        private string Context = "ИНТЕРВАЛ ДВИЖЕНИЯ МЕТРО: ";
+        private string Context2 = " мин. ";
         public Metros()
         {
             this.InitializeComponent();
-           
-            hour = Convert.ToInt32(DateTime.Now.ToString("HH"));
-            DayofWeek = DateTime.Now.DayOfWeek.ToString();
             this.Loaded += Metro_Loaded;
         }
 
@@ -38,6 +35,15 @@ namespace MinskTS.Views
 
         private void Metro_Loaded(object sender, RoutedEventArgs e)
         {
+            CompositionTarget.Rendering += Time;
+            
+        }
+
+        private void Time(object sender, object e)
+        {
+
+            hour = Convert.ToInt32(DateTime.Now.ToString("HH"));
+            DayofWeek = DateTime.Now.DayOfWeek.ToString();
             using (MetroContext db = new MetroContext())
             {
                 switch (DayofWeek)
@@ -82,6 +88,7 @@ namespace MinskTS.Views
                 }
                 bloText.Text = Context + Metr + Context2;
             }
+            
         }
     }
 }

@@ -132,13 +132,13 @@ namespace MinskTS.MinskTS_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[26];
+            _typeNameTable = new string[25];
             _typeNameTable[0] = "MinskTS.ViewModels.ViewModelLocator";
             _typeNameTable[1] = "Object";
             _typeNameTable[2] = "MinskTS.ViewModels.MainViewModel";
             _typeNameTable[3] = "GalaSoft.MvvmLight.ViewModelBase";
             _typeNameTable[4] = "GalaSoft.MvvmLight.ObservableObject";
-            _typeNameTable[5] = "MinskTS.ViewModels.StopViewModel";
+            _typeNameTable[5] = "MinskTS.Models.Converter";
             _typeNameTable[6] = "WindowsStateTriggers.DeviceFamilyStateTrigger";
             _typeNameTable[7] = "Windows.UI.Xaml.StateTriggerBase";
             _typeNameTable[8] = "WindowsStateTriggers.DeviceFamily";
@@ -152,21 +152,20 @@ namespace MinskTS.MinskTS_XamlTypeInfo
             _typeNameTable[16] = "Byte";
             _typeNameTable[17] = "MinskTS.Views.Home";
             _typeNameTable[18] = "MinskTS.Views.Metros";
-            _typeNameTable[19] = "String";
-            _typeNameTable[20] = "MinskTS.Models.Converter";
-            _typeNameTable[21] = "MinskTS.Views.Routes";
-            _typeNameTable[22] = "MinskTS.Views.RouteStops";
-            _typeNameTable[23] = "MinskTS.Views.Stops";
-            _typeNameTable[24] = "MinskTS.Views.StopRoutes";
-            _typeNameTable[25] = "MinskTS.Views.Times";
+            _typeNameTable[19] = "MinskTS.Views.Routes";
+            _typeNameTable[20] = "MinskTS.Views.RouteStops";
+            _typeNameTable[21] = "MinskTS.Views.Setting";
+            _typeNameTable[22] = "MinskTS.Views.Stops";
+            _typeNameTable[23] = "MinskTS.Views.StopRoutes";
+            _typeNameTable[24] = "MinskTS.Views.Times";
 
-            _typeTable = new global::System.Type[26];
+            _typeTable = new global::System.Type[25];
             _typeTable[0] = typeof(global::MinskTS.ViewModels.ViewModelLocator);
             _typeTable[1] = typeof(global::System.Object);
             _typeTable[2] = typeof(global::MinskTS.ViewModels.MainViewModel);
             _typeTable[3] = typeof(global::GalaSoft.MvvmLight.ViewModelBase);
             _typeTable[4] = typeof(global::GalaSoft.MvvmLight.ObservableObject);
-            _typeTable[5] = typeof(global::MinskTS.ViewModels.StopViewModel);
+            _typeTable[5] = typeof(global::MinskTS.Models.Converter);
             _typeTable[6] = typeof(global::WindowsStateTriggers.DeviceFamilyStateTrigger);
             _typeTable[7] = typeof(global::Windows.UI.Xaml.StateTriggerBase);
             _typeTable[8] = typeof(global::WindowsStateTriggers.DeviceFamily);
@@ -180,13 +179,12 @@ namespace MinskTS.MinskTS_XamlTypeInfo
             _typeTable[16] = typeof(global::System.Byte);
             _typeTable[17] = typeof(global::MinskTS.Views.Home);
             _typeTable[18] = typeof(global::MinskTS.Views.Metros);
-            _typeTable[19] = typeof(global::System.String);
-            _typeTable[20] = typeof(global::MinskTS.Models.Converter);
-            _typeTable[21] = typeof(global::MinskTS.Views.Routes);
-            _typeTable[22] = typeof(global::MinskTS.Views.RouteStops);
-            _typeTable[23] = typeof(global::MinskTS.Views.Stops);
-            _typeTable[24] = typeof(global::MinskTS.Views.StopRoutes);
-            _typeTable[25] = typeof(global::MinskTS.Views.Times);
+            _typeTable[19] = typeof(global::MinskTS.Views.Routes);
+            _typeTable[20] = typeof(global::MinskTS.Views.RouteStops);
+            _typeTable[21] = typeof(global::MinskTS.Views.Setting);
+            _typeTable[22] = typeof(global::MinskTS.Views.Stops);
+            _typeTable[23] = typeof(global::MinskTS.Views.StopRoutes);
+            _typeTable[24] = typeof(global::MinskTS.Views.Times);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -224,17 +222,17 @@ namespace MinskTS.MinskTS_XamlTypeInfo
         private object Activate_0_ViewModelLocator() { return new global::MinskTS.ViewModels.ViewModelLocator(); }
         private object Activate_2_MainViewModel() { return new global::MinskTS.ViewModels.MainViewModel(); }
         private object Activate_4_ObservableObject() { return new global::GalaSoft.MvvmLight.ObservableObject(); }
-        private object Activate_5_StopViewModel() { return new global::MinskTS.ViewModels.StopViewModel(); }
+        private object Activate_5_Converter() { return new global::MinskTS.Models.Converter(); }
         private object Activate_6_DeviceFamilyStateTrigger() { return new global::WindowsStateTriggers.DeviceFamilyStateTrigger(); }
         private object Activate_12_MainPage() { return new global::MinskTS.MainPage(); }
         private object Activate_17_Home() { return new global::MinskTS.Views.Home(); }
         private object Activate_18_Metros() { return new global::MinskTS.Views.Metros(); }
-        private object Activate_20_Converter() { return new global::MinskTS.Models.Converter(); }
-        private object Activate_21_Routes() { return new global::MinskTS.Views.Routes(); }
-        private object Activate_22_RouteStops() { return new global::MinskTS.Views.RouteStops(); }
-        private object Activate_23_Stops() { return new global::MinskTS.Views.Stops(); }
-        private object Activate_24_StopRoutes() { return new global::MinskTS.Views.StopRoutes(); }
-        private object Activate_25_Times() { return new global::MinskTS.Views.Times(); }
+        private object Activate_19_Routes() { return new global::MinskTS.Views.Routes(); }
+        private object Activate_20_RouteStops() { return new global::MinskTS.Views.RouteStops(); }
+        private object Activate_21_Setting() { return new global::MinskTS.Views.Setting(); }
+        private object Activate_22_Stops() { return new global::MinskTS.Views.Stops(); }
+        private object Activate_23_StopRoutes() { return new global::MinskTS.Views.StopRoutes(); }
+        private object Activate_24_Times() { return new global::MinskTS.Views.Times(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -250,7 +248,6 @@ namespace MinskTS.MinskTS_XamlTypeInfo
                 userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.Activator = Activate_0_ViewModelLocator;
                 userType.AddMemberName("MainViewModel");
-                userType.AddMemberName("StopViewModel");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -277,9 +274,9 @@ namespace MinskTS.MinskTS_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 5:   //  MinskTS.ViewModels.StopViewModel
-                userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("GalaSoft.MvvmLight.ViewModelBase"));
-                userType.SetIsReturnTypeStub();
+            case 5:   //  MinskTS.Models.Converter
+                userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_5_Converter;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -361,53 +358,48 @@ namespace MinskTS.MinskTS_XamlTypeInfo
             case 18:   //  MinskTS.Views.Metros
                 userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
                 userType.Activator = Activate_18_Metros;
-                userType.AddMemberName("Metr");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 19:   //  String
-                xamlType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 20:   //  MinskTS.Models.Converter
-                userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_20_Converter;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 21:   //  MinskTS.Views.Routes
+            case 19:   //  MinskTS.Views.Routes
                 userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_21_Routes;
+                userType.Activator = Activate_19_Routes;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 22:   //  MinskTS.Views.RouteStops
+            case 20:   //  MinskTS.Views.RouteStops
                 userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_22_RouteStops;
+                userType.Activator = Activate_20_RouteStops;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 23:   //  MinskTS.Views.Stops
+            case 21:   //  MinskTS.Views.Setting
                 userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_23_Stops;
+                userType.Activator = Activate_21_Setting;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 24:   //  MinskTS.Views.StopRoutes
+            case 22:   //  MinskTS.Views.Stops
                 userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_24_StopRoutes;
+                userType.Activator = Activate_22_Stops;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 25:   //  MinskTS.Views.Times
+            case 23:   //  MinskTS.Views.StopRoutes
                 userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_25_Times;
+                userType.Activator = Activate_23_StopRoutes;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 24:   //  MinskTS.Views.Times
+                userType = new global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_24_Times;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -421,75 +413,60 @@ namespace MinskTS.MinskTS_XamlTypeInfo
             var that = (global::MinskTS.ViewModels.ViewModelLocator)instance;
             return that.MainViewModel;
         }
-        private object get_1_ViewModelLocator_StopViewModel(object instance)
-        {
-            var that = (global::MinskTS.ViewModels.ViewModelLocator)instance;
-            return that.StopViewModel;
-        }
-        private object get_2_DeviceFamilyStateTrigger_DeviceFamily(object instance)
+        private object get_1_DeviceFamilyStateTrigger_DeviceFamily(object instance)
         {
             var that = (global::WindowsStateTriggers.DeviceFamilyStateTrigger)instance;
             return that.DeviceFamily;
         }
-        private void set_2_DeviceFamilyStateTrigger_DeviceFamily(object instance, object Value)
+        private void set_1_DeviceFamilyStateTrigger_DeviceFamily(object instance, object Value)
         {
             var that = (global::WindowsStateTriggers.DeviceFamilyStateTrigger)instance;
             that.DeviceFamily = (global::WindowsStateTriggers.DeviceFamily)Value;
         }
-        private object get_3_DeviceFamilyStateTrigger_IsActive(object instance)
+        private object get_2_DeviceFamilyStateTrigger_IsActive(object instance)
         {
             var that = (global::WindowsStateTriggers.DeviceFamilyStateTrigger)instance;
             return that.IsActive;
         }
-        private object get_4_Color_A(object instance)
+        private object get_3_Color_A(object instance)
         {
             var that = (global::Windows.UI.Color)instance;
             return that.A;
         }
-        private void set_4_Color_A(object instance, object Value)
+        private void set_3_Color_A(object instance, object Value)
         {
             var that = (global::Windows.UI.Color)instance;
             that.A = (global::System.Byte)Value;
         }
-        private object get_5_Color_B(object instance)
+        private object get_4_Color_B(object instance)
         {
             var that = (global::Windows.UI.Color)instance;
             return that.B;
         }
-        private void set_5_Color_B(object instance, object Value)
+        private void set_4_Color_B(object instance, object Value)
         {
             var that = (global::Windows.UI.Color)instance;
             that.B = (global::System.Byte)Value;
         }
-        private object get_6_Color_G(object instance)
+        private object get_5_Color_G(object instance)
         {
             var that = (global::Windows.UI.Color)instance;
             return that.G;
         }
-        private void set_6_Color_G(object instance, object Value)
+        private void set_5_Color_G(object instance, object Value)
         {
             var that = (global::Windows.UI.Color)instance;
             that.G = (global::System.Byte)Value;
         }
-        private object get_7_Color_R(object instance)
+        private object get_6_Color_R(object instance)
         {
             var that = (global::Windows.UI.Color)instance;
             return that.R;
         }
-        private void set_7_Color_R(object instance, object Value)
+        private void set_6_Color_R(object instance, object Value)
         {
             var that = (global::Windows.UI.Color)instance;
             that.R = (global::System.Byte)Value;
-        }
-        private object get_8_Metros_Metr(object instance)
-        {
-            var that = (global::MinskTS.Views.Metros)instance;
-            return that.Metr;
-        }
-        private void set_8_Metros_Metr(object instance, object Value)
-        {
-            var that = (global::MinskTS.Views.Metros)instance;
-            that.Metr = (global::System.String)Value;
         }
 
         private global::Windows.UI.Xaml.Markup.IXamlMember CreateXamlMember(string longMemberName)
@@ -505,54 +482,42 @@ namespace MinskTS.MinskTS_XamlTypeInfo
                 xamlMember.Getter = get_0_ViewModelLocator_MainViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "MinskTS.ViewModels.ViewModelLocator.StopViewModel":
-                userType = (global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MinskTS.ViewModels.ViewModelLocator");
-                xamlMember = new global::MinskTS.MinskTS_XamlTypeInfo.XamlMember(this, "StopViewModel", "MinskTS.ViewModels.StopViewModel");
-                xamlMember.Getter = get_1_ViewModelLocator_StopViewModel;
-                xamlMember.SetIsReadOnly();
-                break;
             case "WindowsStateTriggers.DeviceFamilyStateTrigger.DeviceFamily":
                 userType = (global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsStateTriggers.DeviceFamilyStateTrigger");
                 xamlMember = new global::MinskTS.MinskTS_XamlTypeInfo.XamlMember(this, "DeviceFamily", "WindowsStateTriggers.DeviceFamily");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_2_DeviceFamilyStateTrigger_DeviceFamily;
-                xamlMember.Setter = set_2_DeviceFamilyStateTrigger_DeviceFamily;
+                xamlMember.Getter = get_1_DeviceFamilyStateTrigger_DeviceFamily;
+                xamlMember.Setter = set_1_DeviceFamilyStateTrigger_DeviceFamily;
                 break;
             case "WindowsStateTriggers.DeviceFamilyStateTrigger.IsActive":
                 userType = (global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType)GetXamlTypeByName("WindowsStateTriggers.DeviceFamilyStateTrigger");
                 xamlMember = new global::MinskTS.MinskTS_XamlTypeInfo.XamlMember(this, "IsActive", "Boolean");
-                xamlMember.Getter = get_3_DeviceFamilyStateTrigger_IsActive;
+                xamlMember.Getter = get_2_DeviceFamilyStateTrigger_IsActive;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Windows.UI.Color.A":
                 userType = (global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::MinskTS.MinskTS_XamlTypeInfo.XamlMember(this, "A", "Byte");
-                xamlMember.Getter = get_4_Color_A;
-                xamlMember.Setter = set_4_Color_A;
+                xamlMember.Getter = get_3_Color_A;
+                xamlMember.Setter = set_3_Color_A;
                 break;
             case "Windows.UI.Color.B":
                 userType = (global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::MinskTS.MinskTS_XamlTypeInfo.XamlMember(this, "B", "Byte");
-                xamlMember.Getter = get_5_Color_B;
-                xamlMember.Setter = set_5_Color_B;
+                xamlMember.Getter = get_4_Color_B;
+                xamlMember.Setter = set_4_Color_B;
                 break;
             case "Windows.UI.Color.G":
                 userType = (global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::MinskTS.MinskTS_XamlTypeInfo.XamlMember(this, "G", "Byte");
-                xamlMember.Getter = get_6_Color_G;
-                xamlMember.Setter = set_6_Color_G;
+                xamlMember.Getter = get_5_Color_G;
+                xamlMember.Setter = set_5_Color_G;
                 break;
             case "Windows.UI.Color.R":
                 userType = (global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Windows.UI.Color");
                 xamlMember = new global::MinskTS.MinskTS_XamlTypeInfo.XamlMember(this, "R", "Byte");
-                xamlMember.Getter = get_7_Color_R;
-                xamlMember.Setter = set_7_Color_R;
-                break;
-            case "MinskTS.Views.Metros.Metr":
-                userType = (global::MinskTS.MinskTS_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MinskTS.Views.Metros");
-                xamlMember = new global::MinskTS.MinskTS_XamlTypeInfo.XamlMember(this, "Metr", "String");
-                xamlMember.Getter = get_8_Metros_Metr;
-                xamlMember.Setter = set_8_Metros_Metr;
+                xamlMember.Getter = get_6_Color_R;
+                xamlMember.Setter = set_6_Color_R;
                 break;
             }
             return xamlMember;

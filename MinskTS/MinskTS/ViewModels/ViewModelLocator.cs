@@ -13,9 +13,8 @@ namespace MinskTS.ViewModels
         public ViewModelLocator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
-
             SimpleIoc.Default.Register<MainViewModel>();
-            SimpleIoc.Default.Register<StopViewModel>();
+           
         }
 
         public MainViewModel MainViewModel
@@ -23,9 +22,5 @@ namespace MinskTS.ViewModels
             get { return ServiceLocator.Current.GetInstance<MainViewModel>(); }
         }
 
-        public StopViewModel StopViewModel
-        {
-            get { return ServiceLocator.Current.GetInstance<StopViewModel>(); }
-        }
     }
 }

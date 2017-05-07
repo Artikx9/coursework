@@ -8,11 +8,11 @@
       mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-     
-        <ListView  x:Name="scheduleTime"  IsSynchronizedWithCurrentItem="False" IsEnabled="True" IsSwipeEnabled="False" SelectionMode="None"  >
-          
+
+        <ListView  x:Name="scheduleTime"    >
+
             <ListView.ItemTemplate>
-                
+
                 <DataTemplate x:DataType="local:Home">
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -26,6 +26,5 @@
             </ListView.ItemTemplate>
 
         </ListView>
-
     </Grid>
 </Page>

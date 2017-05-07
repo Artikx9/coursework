@@ -619,3 +619,8 @@ E:\MyWork\Курсовой проект\MinskTS\MinskTS\obj\x86\Debug\GalaSoft.M
 E:\MyWork\Курсовой проект\MinskTS\MinskTS\obj\x86\Debug\WindowsStateTriggers.pri.xml
 E:\MyWork\Курсовой проект\MinskTS\MinskTS\obj\x86\Debug\ProjectArchitectures.txt
 E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\x86\Debug\schedule.db
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\x86\Debug\Views\Setting.g.i.cs
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\x86\Debug\Views\Setting.g.cs
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\x86\Debug\Views\Setting.xaml
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\x86\Debug\Views\Setting.xbf
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\x86\Debug\Views\Setting.xbf

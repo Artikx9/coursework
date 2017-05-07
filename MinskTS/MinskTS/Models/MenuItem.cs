@@ -13,6 +13,6 @@ namespace MinskTS.Models
         public string Title { get; set; }
         public string SymbolIcon { get; set; }
         public Type NavigateTo { get; set; }
-        public int Timer { get; set; }
+        
     }
 }

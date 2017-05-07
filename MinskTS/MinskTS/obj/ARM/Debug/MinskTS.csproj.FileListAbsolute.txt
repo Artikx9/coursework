@@ -308,3 +308,7 @@ E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\Rout
 E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\Stops.xbf
 E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\StopRoutes.xbf
 E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\Times.xbf
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\Setting.g.i.cs
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\Setting.g.cs
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\Setting.xaml
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\Setting.xbf
