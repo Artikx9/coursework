@@ -56,7 +56,8 @@ namespace MinskTS.Views
                      StopName = item2;
                     }
             }
-            MainPage.Title = "→Расписание " + RouteNumber + " " +Icon;
+            MainPage.Title = "Расписание: " + RouteNumber + " " +Icon;
+            Stopinfo.Text = "Остановка→" + StopName;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -79,7 +80,7 @@ namespace MinskTS.Views
                 }
 
                 scheduleTime.ItemsSource = str;
-               // scheduleTime.SelectedIndex = 2;
+                
             }
         }
     }

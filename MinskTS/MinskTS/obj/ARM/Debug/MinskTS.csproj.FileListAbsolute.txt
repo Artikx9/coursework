@@ -312,3 +312,4 @@ E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\Sett
 E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\Setting.g.cs
 E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\Setting.xaml
 E:\MyWork\Курсавой проект\MinskTS\MinskTS\obj\ARM\Debug\Views\Setting.xbf
+E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\ARM\Debug\Views\Setting.xbf

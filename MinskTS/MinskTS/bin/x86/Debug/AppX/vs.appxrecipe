@@ -19,25 +19,25 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>71BF310EA13022A7118A799A490DE7194A4CBA2EFD1BFCEF390F337D1A8D355E</RegisteredManifestChecksum>
-    <RegisteredPackageMoniker>232d2fcb-fb3a-4a26-8d3a-24b7f295a3d9_1.0.0.0_x86__a2dhf170742hg</RegisteredPackageMoniker>
+    <RegisteredManifestChecksum>09ECEBB635FE79E7BCD9426B13E795A947C46DA4F3F0EA3F3F78033F35C41A18</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>232d2fcb-fb3a-4a26-8d3a-24b7f295a3d9_1.0.1.0_x86__a2dhf170742hg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>232d2fcb-fb3a-4a26-8d3a-24b7f295a3d9_a2dhf170742hg!App</RegisteredUserModeAppID>
     <RegisteredPackageID>232d2fcb-fb3a-4a26-8d3a-24b7f295a3d9</RegisteredPackageID>
     <RegisteredPackagePublisher>CN=artik</RegisteredPackagePublisher>
-    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+    <RegisteredVersion>1.0.1.0</RegisteredVersion>
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
     <AppXManifest Include="E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-07T23:06:44.498</Modified>
+      <Modified>2017-05-09T16:54:21.808</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\x86\Debug\MinskTS.exe">
       <PackagePath>entrypoint\MinskTS.exe</PackagePath>
-      <Modified>2017-05-07T23:06:43.758</Modified>
+      <Modified>2017-05-09T16:54:21.025</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\artik\.nuget\packages\CommonServiceLocator\1.3.0\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll">
       <PackagePath>Microsoft.Practices.ServiceLocation.dll</PackagePath>
@@ -854,11 +854,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\MyWork\Курсавой проект\MinskTS\MinskTS\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-04-10T14:25:25.599</Modified>
+      <Modified>2017-05-08T11:50:43.428</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\x86\Debug\MinskTS.xr.xml">
       <PackagePath>MinskTS.xr.xml</PackagePath>
-      <Modified>2017-05-07T23:06:15.217</Modified>
+      <Modified>2017-05-09T15:49:56.801</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -871,11 +871,11 @@
     <AppxPackagedFile Include="E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-05-07T23:06:44.205</Modified>
+      <Modified>2017-05-09T16:54:21.465</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\MyWork\Курсавой проект\MinskTS\MinskTS\bin\x86\Debug\Core\MinskTS.exe">
       <PackagePath>MinskTS.exe</PackagePath>
-      <Modified>2017-05-07T23:06:44.496</Modified>
+      <Modified>2017-05-09T16:54:21.805</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

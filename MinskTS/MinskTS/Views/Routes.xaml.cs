@@ -1,41 +1,30 @@
 ﻿using MinskTS.Models;
 using System;
-using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using System.Threading.Tasks;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 namespace MinskTS.Views
 {
     public sealed partial class Routes : Page
     {
-        public   Routes()
+        public  Routes()
         {
             this.InitializeComponent();
-            this.Loaded += Rout_Loaded;  
+            this.Loaded +=  Rout_Loaded;
         }
-
+        
         private  void Rout_Loaded(object sender, RoutedEventArgs e)
         {
-            
-            using (ScheduleContext db = new ScheduleContext())
+
+            using (ScheduleContext  db =  new ScheduleContext())
             {
-                scheduleRoute.ItemsSource = db.Route.ToList();
-                comboBox.ItemsSource = Enum.GetValues(typeof(Types));
-                comboBox.SelectedIndex = 0;
+                 scheduleRoute.ItemsSource =   db.Route.ToList();
+                comboBox.ItemsSource =  Enum.GetValues(typeof(Types));
+                comboBox.SelectedIndex =  0;
             }
         }
-
+    
         private  void  SortFunction(string senderText)
         {
             using (ScheduleContext db = new ScheduleContext())
@@ -127,7 +116,7 @@ namespace MinskTS.Views
         {
             Route selected = (Route)e.ClickedItem;
             Frame.Navigate(typeof(RouteStops), selected.Id);
-            MainPage.Title = "→выберите остановку";
+            MainPage.Title = "Выберите остановку";
         }
     }
 

@@ -17,6 +17,8 @@ namespace MinskTS
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        Windows.Storage.ApplicationDataContainer localSettings =
+           Windows.Storage.ApplicationData.Current.LocalSettings;
         public static string Title { get; set; }
         public MainPage()
         {
@@ -30,7 +32,6 @@ namespace MinskTS
         {
 
             MenuGrid_Tapped(null, null);
-            Settings.Schowtime = true;
             CompositionTarget.Rendering += Time;
             CompositionTarget.Rendering += Titles;
         }
@@ -52,7 +53,7 @@ namespace MinskTS
         private void Time(object sender, object e)
         {
          
-            if (Settings.Schowtime == true)
+            if (Convert.ToBoolean(localSettings.Values["TimeSwitch"]) == true)
             {
                 Timepanel.Text = DateTime.Now.ToString("HH:mm:ss");
             }

@@ -1,18 +1,6 @@
-﻿using MinskTS.Models;
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
+﻿using System;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 
 // Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -23,6 +11,8 @@ namespace MinskTS.Views
     /// </summary>
     public sealed partial class Setting : Page
     {
+        Windows.Storage.ApplicationDataContainer localSettings =
+            Windows.Storage.ApplicationData.Current.LocalSettings;
         public Setting()
         {
             this.InitializeComponent();
@@ -31,9 +21,10 @@ namespace MinskTS.Views
 
         private void Settings_Loaded(object sender, RoutedEventArgs e)
         {
-            if (Settings.Schowtime == true) TimeSwitch.IsOn = true;
+            if (Convert.ToBoolean(localSettings.Values["TimeSwitch"]) == true) TimeSwitch.IsOn = true;
             else TimeSwitch.IsOn = false;
-            
+            localSettings.Values["TimeSwitch"] = TimeSwitch.IsOn;
+
         }
 
         private void TimeSwitch_Toggled(object sender, RoutedEventArgs e)
@@ -41,10 +32,10 @@ namespace MinskTS.Views
             switch (TimeSwitch.IsOn)
             {
                 case true:
-                    Settings.Schowtime = true;
+                    localSettings.Values["TimeSwitch"]  = true;
                     break;
                 case false:
-                    Settings.Schowtime = false;
+                    localSettings.Values["TimeSwitch"] = false;
                     break;
             }      
             

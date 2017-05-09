@@ -6,10 +6,17 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       mc:Ignorable="d">
-
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-        <ListView  x:Name="scheduleTime"    >
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"  />
+                <ColumnDefinition Width="250"  />
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="Часы" FontSize="26"/>
+            <TextBlock Grid.Column="1" Text="Минуты" FontSize="26" />
+        </Grid>
+        <TextBlock   x:Name="Stopinfo" FontSize="26" HorizontalAlignment="Center" />
+        <ListView x:Name="scheduleTime" Margin="0,35,0,0"     >
 
             <ListView.ItemTemplate>
 

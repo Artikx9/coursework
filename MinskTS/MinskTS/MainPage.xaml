@@ -82,12 +82,12 @@
                            Text="{Binding SelectedMenuItem.Title}" />
                 <TextBlock x:Name="titletwo"
                            FontSize="22"
-                           Margin="118,9,0,9"
                            VerticalAlignment="Center"
-                           HorizontalAlignment="Left" />
+                           HorizontalAlignment="Center"
+                           Text="asdasdasd" Foreground="#FFC71717" SelectionHighlightColor="#FF4185BC" FocusVisualPrimaryBrush="#FFE02424" />
                 <TextBlock x:Name="Timepanel"
                            FontSize="22"
-                           Margin="10,0,0,0"
+                           Margin="10,0,20,0"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Right" />
             </Grid>

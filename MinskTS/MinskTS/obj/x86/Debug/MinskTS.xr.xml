@@ -119,6 +119,9 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="TextTrimming" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="SelectionHighlightColor" />
+      <RootProperty Name="FocusVisualPrimaryBrush" />
       <RootProperty Name="TextAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ToolTipService">
