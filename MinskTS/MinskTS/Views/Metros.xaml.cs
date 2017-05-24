@@ -1,19 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
 using MinskTS.Models;
-using Microsoft.EntityFrameworkCore;
 
 
 namespace MinskTS.Views
@@ -30,9 +19,6 @@ namespace MinskTS.Views
             this.InitializeComponent();
             this.Loaded += Metro_Loaded;
         }
-
-
-
         private void Metro_Loaded(object sender, RoutedEventArgs e)
         {
             CompositionTarget.Rendering += Time;

@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 namespace MinskTS.Models
 {
-    public enum Types {Все = 0, Автобус , Тролейбус, Трамвай }
+    public enum Types {All = 0, Bus , Trolleybus, Tramway }
     public class Route
         {   [Key]
             public int Id { get; set; }

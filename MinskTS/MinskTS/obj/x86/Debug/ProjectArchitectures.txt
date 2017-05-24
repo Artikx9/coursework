@@ -1,1 +1,1 @@
-E:\MyWork\Курсавой проект\MinskTS\MinskTS\MinskTS.csproj;x86
+E:\MyWork\coursework\MinskTS\MinskTS\MinskTS.csproj;x86

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.EntityFrameworkCore;
 namespace MinskTS.Models
 {
     public class RouteStop
@@ -20,7 +14,7 @@ namespace MinskTS.Models
         public DbSet<Stop> Stop { get; set; }
         public DbSet<Route> Route { get; set; }
         public DbSet<TimeTable> TimeTable { get; set; }
-
+    
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<RouteStop>()

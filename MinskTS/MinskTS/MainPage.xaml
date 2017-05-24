@@ -84,7 +84,7 @@
                            FontSize="22"
                            VerticalAlignment="Center"
                            HorizontalAlignment="Center"
-                           Text="asdasdasd" Foreground="#FFC71717" SelectionHighlightColor="#FF4185BC" FocusVisualPrimaryBrush="#FFE02424" />
+                           Foreground="#FFC71717" SelectionHighlightColor="#FF4185BC" FocusVisualPrimaryBrush="#FFE02424" />
                 <TextBlock x:Name="Timepanel"
                            FontSize="22"
                            Margin="10,0,20,0"

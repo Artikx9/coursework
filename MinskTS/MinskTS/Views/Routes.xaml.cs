@@ -14,7 +14,7 @@ namespace MinskTS.Views
             this.Loaded +=  Rout_Loaded;
         }
         
-        private  void Rout_Loaded(object sender, RoutedEventArgs e)
+        private void Rout_Loaded(object sender, RoutedEventArgs e)
         {
 
             using (ScheduleContext  db =  new ScheduleContext())
@@ -23,6 +23,7 @@ namespace MinskTS.Views
                 comboBox.ItemsSource =  Enum.GetValues(typeof(Types));
                 comboBox.SelectedIndex =  0;
             }
+            
         }
     
         private  void  SortFunction(string senderText)
@@ -48,39 +49,39 @@ namespace MinskTS.Views
                         if (senderText.Length > 0)
                         {
                             scheduleRoute.ItemsSource = db.Route
-                                .Where(c => c.Type == Types.Автобус)
+                                .Where(c => c.Type == Types.Bus)
                                 .Where(x => x.RouteName.Contains(suggestRoute.Text) || x.Number.Contains(suggestRoute.Text));
                         }
                         else
                         {
                             scheduleRoute.ItemsSource = db.Route
-                                .Where(x => x.Type == Types.Автобус);
+                                .Where(x => x.Type == Types.Bus);
                         }
                         break;
                     case 2:
                         if (senderText.Length > 0)
                         {
                             scheduleRoute.ItemsSource = db.Route
-                                .Where(c => c.Type == Types.Трамвай)
+                                .Where(c => c.Type == Types.Tramway)
                                 .Where(x => x.RouteName.Contains(suggestRoute.Text) || x.Number.Contains(suggestRoute.Text));
                         }
                         else
                         {
                             scheduleRoute.ItemsSource = db.Route
-                                .Where(x => x.Type == Types.Трамвай);
+                                .Where(x => x.Type == Types.Tramway);
                         }
                         break;
                     case 3:
                         if (senderText.Length > 0)
                         {
                             scheduleRoute.ItemsSource = db.Route
-                                .Where(c => c.Type == Types.Тролейбус)
+                                .Where(c => c.Type == Types.Trolleybus)
                                 .Where(x => x.RouteName.Contains(suggestRoute.Text) || x.Number.Contains(suggestRoute.Text));
                         }
                         else
                         {
                             scheduleRoute.ItemsSource = db.Route
-                                .Where(x => x.Type == Types.Тролейбус);
+                                .Where(x => x.Type == Types.Trolleybus);
                         }
                         break;
                     default:

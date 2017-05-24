@@ -12,9 +12,8 @@
     </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <AutoSuggestBox x:Name="suggestRoute"   PlaceholderText="Введите фразу для поиска" QueryIcon="Find" TextChanged="SuggestBox_TextChanged2" VerticalAlignment="Top" HorizontalContentAlignment="Stretch" Margin="103,0,0,0"/>
-        <ComboBox  SelectionChanged="ComboBox_SelectionChanged" x:Name="comboBox"  Width="103"   />
+        <ComboBox SelectionChanged="ComboBox_SelectionChanged" x:Name="comboBox"  Width="103" />
         <ListView  IsItemClickEnabled="True"  ItemClick="ScheduleList_ItemClick" x:Name="scheduleRoute" Margin="0,32,0,0" IsMultiSelectCheckBoxEnabled="False">
-
             <ListView.ItemTemplate>
                 <DataTemplate x:DataType="local:Home">
                     <Grid>

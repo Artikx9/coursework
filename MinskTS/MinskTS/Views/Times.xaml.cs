@@ -1,15 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using MinskTS.Models;
@@ -22,6 +15,7 @@ namespace MinskTS.Views
     /// </summary>
     public sealed partial class Times : Page
     {
+        
         private static int rt;
         private static int st;
         public static int St { get => st; set => st = value; }
@@ -36,8 +30,10 @@ namespace MinskTS.Views
         {
             this.InitializeComponent();
             this.Loaded += Time_Loaded;
-            
+            CompositionTarget.Rendering += NowTime;
         }
+
+       
 
         private void Time_Loaded(object sender, RoutedEventArgs e)
         {
@@ -57,7 +53,7 @@ namespace MinskTS.Views
                     }
             }
             MainPage.Title = "Расписание: " + RouteNumber + " " +Icon;
-            Stopinfo.Text = "Остановка→" + StopName;
+            Stopinfo.Text = "Остановка:" + StopName;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -70,18 +66,21 @@ namespace MinskTS.Views
                 {
                     if (item.RouteId == rt && item.StopId == st)
                     {
-
                             lst.AddRange(item.Hour.Split(','));
                             lst2.AddRange(item.Minutes.Split(','));
                         for (int i = 0; i < lst.Count; i++)
                             str.Add(lst[i], lst2[i]);
-
                     }
                 }
-
                 scheduleTime.ItemsSource = str;
                 
             }
         }
+        private void NowTime(object sender, object e)
+        {
+            scheduleTime.SelectedIndex = lst.IndexOf(lst.Where(x => x == DateTime.Now.Hour.ToString()).FirstOrDefault());
+           
+        }
+ 
     }
 }

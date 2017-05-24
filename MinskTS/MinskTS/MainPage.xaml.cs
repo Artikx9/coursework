@@ -6,7 +6,6 @@ using Windows.UI.Xaml.Media;
 using MinskTS.Models;
 using Windows.ApplicationModel.Core;
 using Windows.UI.Core;
-using Windows.UI.Xaml.Media.Imaging;
 
 // Документацию по шаблону элемента "Пустая страница" см. по адресу https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x419
 

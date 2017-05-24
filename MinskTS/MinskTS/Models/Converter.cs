@@ -6,17 +6,17 @@ namespace MinskTS.Models
 
 
     public class Converter : IValueConverter
-        {
+    {
 
             public object Convert(object value, Type targetType, object parameter, string language)
             {
                 switch ((Types)value)
                 {
-                    case Types.Автобус:
+                    case Types.Bus:
                         return "/Assets/bus.png";
-                    case Types.Трамвай:
+                    case Types.Tramway:
                         return "/Assets/Tramway.png";
-                    case Types.Тролейбус:
+                    case Types.Trolleybus:
                         return "/Assets/Trolleybus.png";
                     default:
                         return null;
@@ -28,6 +28,6 @@ namespace MinskTS.Models
             {
                 throw new NotImplementedException();
             }
-        }
-    
+    }
+
 }

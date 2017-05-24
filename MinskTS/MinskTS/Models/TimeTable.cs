@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
-using Microsoft.EntityFrameworkCore;
-namespace MinskTS.Models
-{  
-     public class TimeTable
+﻿namespace MinskTS.Models
+{
+    public class TimeTable
      {
         public int Id { get; set; }
         public string Hour { get; set; }

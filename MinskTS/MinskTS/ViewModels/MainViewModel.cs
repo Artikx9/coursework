@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using GalaSoft.MvvmLight;
 using MinskTS.Models;
 using System.Collections.ObjectModel;
-using Windows.UI.Xaml.Controls;
 using MinskTS.Views;
 
 namespace MinskTS.ViewModels

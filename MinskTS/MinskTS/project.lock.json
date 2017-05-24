@@ -29071,10 +29071,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "E:\\MyWork\\Курсавой проект\\MinskTS\\MinskTS\\MinskTS.csproj",
+      "projectUniqueName": "E:\\MyWork\\coursework\\MinskTS\\MinskTS\\MinskTS.csproj",
       "projectName": "MinskTS",
-      "projectPath": "E:\\MyWork\\Курсавой проект\\MinskTS\\MinskTS\\MinskTS.csproj",
-      "projectJsonPath": "E:\\MyWork\\Курсавой проект\\MinskTS\\MinskTS\\project.json",
+      "projectPath": "E:\\MyWork\\coursework\\MinskTS\\MinskTS\\MinskTS.csproj",
+      "projectJsonPath": "E:\\MyWork\\coursework\\MinskTS\\MinskTS\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {
